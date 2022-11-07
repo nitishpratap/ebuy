@@ -1,0 +1,187 @@
+.parent {
+    display: flex;
+}
+
+.colored {
+    width: 33vw;
+    height: 100vh;
+    background-color: #B9D9FF;
+
+}
+
+.colored .logo {
+    margin-top: 5vh;
+    margin-left: -5rem;
+}
+
+.colored .title {
+    margin-top: 20vh;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.colored .icon {
+    width: 33vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+.non-colored {
+    position: absolute;
+    left: 33vw;
+    width: 67vw;
+    height: 100vh;
+}
+
+.textAndButton {
+    display: flex;
+    position: absolute;
+    right: 10vw;
+    top: 4vh;
+}
+
+.textAndButton .btn {
+    margin-left: 2rem;
+}
+
+.texts {
+    position: absolute;
+    top: 30vh;
+    left: 20vw;
+
+}
+
+.greyColoredText {
+    color: #999EAE;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 26.4vw;
+    margin-top: 50vh;
+    margin-left: 20vw;
+    border-radius: 2rem;
+}
+
+.email {
+
+}
+
+.password {
+    margin-top: 5vh;
+
+}
+
+.input {
+    line-height: 4em;
+    border-radius: 0.5rem;
+
+}
+
+.link {
+    margin-top: 1.2rem;
+    color: #3478F0;
+    text-decoration: none;
+}
+
+.signUp {
+    background-color: #FF497C;
+    border-color: #FF497C;
+    border-radius: 5px;
+    width: 10rem;
+    height: 3.5rem;
+    color: white;
+
+}
+
+.signIn {
+    background-color: #3576F0;
+    border-color: #3576F0;
+    border-radius: 6px;
+    width: 7rem;
+    height: 3.5rem;
+    color: white;
+}
+
+.login {
+    display: flex;
+}
+
+.btnAndForget :hover {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+.buttons {
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.loginSection {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 991px){
+    .title {
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+
+    .colored{
+        background-color: #FFFFFF;
+    }
+    .non-colored{
+        left: 10vw;
+    }
+    .textAndButton{
+       right: -10vh;
+    }
+    .inputs{
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .parent{
+
+    }
+    .textAndButton{
+        right: -22vh;
+    }
+    .buttons{
+       width: 80vw;
+        margin-left: 7.8rem;
+    }
+
+}
+
+@media only screen and (min-width: 530px) and (max-width: 768px) {
+    .parent{
+        background-color: tomato;
+    }
+    .buttons{
+
+
+    }
+    .loginSection{
+        width: 100vw;
+    }
+}
