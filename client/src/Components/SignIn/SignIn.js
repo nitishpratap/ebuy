@@ -2,8 +2,8 @@
 import * as React from 'react';
 import Button from 'react-bootstrap/Button';
 import style from './style.css'
-import logo from '/Users/nitishyadav/Desktop/repos/react/eTrade/client/src/Assets/logo.png'
-import icon from '/Users/nitishyadav/Desktop/repos/react/eTrade/client/src/Assets/login.png'
+import logo from './logo.png'
+import icon from './login.png'
 
 export function SignIn() {
     return (
