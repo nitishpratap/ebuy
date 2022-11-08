@@ -178,10 +178,22 @@
         background-color: tomato;
     }
     .buttons{
-
+        margin-right: 14vw;
 
     }
     .loginSection{
         width: 100vw;
     }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 530px) {
+
+    .logo{
+        margin-right: -80vw;
+    }
+    .textAndButton{
+        margin-top: 4rem;
+    }
+
+
 }
