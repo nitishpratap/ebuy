@@ -189,11 +189,45 @@
 @media only screen and (min-width: 380px) and (max-width: 530px) {
 
     .logo{
-        margin-right: -80vw;
+        margin-right: -90vw;
+
     }
     .textAndButton{
         margin-top: 4rem;
+        flex-direction: column;
+        margin-right: 40%;
     }
+    .texts{
+         width: 100%;
+        font-size: x-large;
+        margin-left: -2.5rem;
+
+    }
+    .greyColoredText{
+        font-size: medium;
+    }
+    .email{
+        width: 80VW;
+    }
+    .password{
+        width: 80vw;
+    }
+    .inputs{
+        margin-left: -1vw;
+    }
+    .link{
+        margin-left: 10vw;
+        width: 50rem;
+        font-size: small;
+    }
+    .loginSection{
+        width: 100vw;
+    }
+    .textAndButton .btn {
+         margin-left: 0rem;
+    }
+
+
 
 
 }

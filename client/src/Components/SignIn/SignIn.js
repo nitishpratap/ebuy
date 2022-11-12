@@ -17,7 +17,10 @@ export function SignIn() {
                 </div>
                 <div className="non-colored">
                     <div className="textAndButton">
-                        <p>Not a member?</p>
+                        <div className={"not_a_member"}>
+                            <p>Not a member?</p>
+                        </div>
+
                         <div className={"btnAndForget"}>
                             <Button className={"signUp "}><h4 className={"noHover"}>Sign Up Now</h4></Button>
                         </div>
@@ -33,12 +36,10 @@ export function SignIn() {
                         </div>
                     </div>
                     <div className={"loginSection"}>
-                        <div className={"buttons"}>
                             <div className={"btnAndForget"}>
                                 <Button className={"signIn"}><h4 className={"noHover"}>Sign In</h4></Button>
                             </div>
                             <a href="" className="link">Forget password?</a>
-                        </div>
                     </div>
                 </div>
             </div>
