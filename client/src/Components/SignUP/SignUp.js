@@ -8,9 +8,9 @@ export function SignUp() {
         <>
             <div className={"parent"}>
                 <div className={"color"}>
-                    <img  className="logo" src={logo} alt={}/>
+                    <img  className="logo" src={logo}/>
                     <h3 className="title" >We Offer the Best Products </h3>
-                    <img className="picture" src={picture} alt={}/>
+                    <img className="picture" src={picture}/>
 
                 </div>
                 <div className={"non-color"}>
@@ -39,7 +39,7 @@ export function SignUp() {
                         </button>
                     </div>
 
-                    
+
                 </div>
             </div>
         </>
