@@ -1,0 +1,22 @@
+{
+  "name": "ebuy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitishpratap18/eBuy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitishpratap18/eBuy/issues"
+  },
+  "homepage": "https://github.com/nitishpratap18/eBuy#readme",
+  "dependencies": {
+    "react-router-dom": "^6.4.3"
+  }
+}
