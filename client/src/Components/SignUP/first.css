@@ -1,0 +1,92 @@
+.parent{
+    display: flex;
+}
+.color{
+    background-color: #F9D7D9;
+    width: 33%;
+    height: 100%;
+
+}
+
+ .logo {
+     margin-top: 34px;
+     margin-left: 65px;
+ }
+
+ .title {
+    margin-top: 60px;
+    font-weight: bolder;
+    font-size: x-large;
+     margin-left: 65px;
+}
+.picture{
+    width: 33vw;
+    height: 100vh;
+    position: absolute;
+}
+
+non-color{
+    eft: 33vw;
+    width: 67vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.textAndButton{
+    display: flex;
+    position: absolute;
+    right: 4vw;
+}
+
+Alread-a-member{
+}
+
+signIn{
+    margin-left: 36px;
+
+}
+
+.form-heading{
+    margin-top: 10vw;
+    margin-left: 14vw;
+
+}
+.text-fields{
+    display: flex;
+    flex-direction: column;
+    margin-left: 14vw;
+    margin-top: 4vw;
+    justify-content: space-between;
+    width: 104%;
+    border-radius: 2rem;
+
+}
+
+input.input{
+    line-height: 7vh;
+}
+input.Email.input {
+    margin-top: 5vh;
+}
+
+.createAccount{
+    margin-left: 14vw;
+    margin-top: 3vw;
+}
+.createAccountButton {
+    line-height: 6vh;
+    width: 14vw;
+    border-radius: 0.7rem;
+}
+button{
+    background-color: #3576F0;
+    border-color: #3576F0;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
+
+
+
