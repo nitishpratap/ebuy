@@ -1,7 +1,7 @@
 import * as React from 'react';
-import style from './style.css'
 import logo from './logo.png'
 import picture from './picture.png'
+import style from './first.css'
 
 export function SignUp() {
     return (
@@ -16,9 +16,9 @@ export function SignUp() {
                 <div className={"non-color"}>
                     <div className="textAndButton">
                             <div>
-                                <p className="Already a member">Already a member?</p>
+                                <p className="Already-a-member">Already a member?</p>
                             </div>
-                            <div>
+                            <div className={"button"}>
                                  <button className={"signIn"}>Sign In</button>
                             </div>
                     </div>
@@ -26,12 +26,15 @@ export function SignUp() {
                         <h3 className={"heading"}>I'm New Here</h3>
                         <p className={"greyColoredText"}>Enter your detail below</p>
                     </div>
+                    <div>
+                        <div className={"text-fields"}>
+                            <input className={"userName input"} type="text" placeholder={"mahimasharma"}/>
+                            <input className={"Email input"} type ="Email" placeholder={"mahimasharmaynr@gmail.com"}/>
+                            <input className={"password input"}  type ="password" placeholder={"*********"}/>
+                        </div>
 
-                    <div className={"text-fields"}>
-                        <input className={"userName"} type={"text"} placeholder={"mahimasharma"}/>
-                        <input className={"Email"} type ="Email" placeholder={"mahimasharmaynr@gmail.com"}/>
-                        <input className={"password"}  type ="password" placeholder={"*********"}/>
                     </div>
+
 
                     <div className={"createAccount"}>
                         <button className={"createAccountButton"}>
