@@ -1,0 +1,20 @@
+.dev{
+    display: flex;
+    flex-wrap: wrap ;
+}
+.headers{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    color: #777777;
+}
+a:hover {
+    color: #292831;
+    text-decoration: underline;
+}
+.address{
+    color: #777777;
+}

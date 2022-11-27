@@ -3,6 +3,7 @@ import style from './style.css'
 import {SignUp} from "../SignUP/SignUp";
 import {SignIn} from "../SignIn/SignIn";
 import {Route} from "react-router-dom";
+import {Footer} from "../Footer/Footer";
 
 export function Home() {
     return (
@@ -12,7 +13,10 @@ export function Home() {
             <a href={"/login"} style={{textDecoration : "none"}}>login</a>
             <br/>
             <a href={"/signup"} style={{textDecoration : "none"}}>signup</a>
+                <br/>
+                <a href={"/signup"} style={{textDecoration : "none"}}>signup</a>
             </div>
+            <Footer></Footer>
         </>
     )
 }
