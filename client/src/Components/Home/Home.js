@@ -9,12 +9,12 @@ export function Home() {
     return (
         <>
             <h1>Hello home</h1>
-            <div style={{textAlign : "center"}}>
-            <a href={"/login"} style={{textDecoration : "none"}}>login</a>
-            <br/>
-            <a href={"/signup"} style={{textDecoration : "none"}}>signup</a>
+            <div style={{textAlign: "center"}}>
+                <a href={"/login"} style={{textDecoration: "none"}}>login</a>
                 <br/>
-                <a href={"/signup"} style={{textDecoration : "none"}}>signup</a>
+                <br/>
+                <a href={"/signup"} style={{textDecoration: "none"}}>signup</a>
+                <br/>
             </div>
             <Footer></Footer>
         </>
