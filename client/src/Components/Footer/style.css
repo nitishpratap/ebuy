@@ -19,3 +19,39 @@ a:hover {
 .address{
     color: #777777;
 }
+.download-logo{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+
+}
+.icon{
+    margin: 0.8rem;
+}
+.accept {
+    display: flex;
+    justify-content: space-around;
+
+}
+.accept-icon {
+    height: 2em;
+    width: 2em;
+}
+.icon-wrap {
+    height: 1.8em;
+    width: 2em;
+    transition: background-color 0.25s;
+    border-radius: 50%;
+}
+.icon-wrap:hover {
+    background-color: #ff497c;
+    cursor: pointer;
+}
+.first{
+    /*position: absolute;*/
+    /*bottom: 0px;*/
+    /*margin: 4rem;*/
+}
