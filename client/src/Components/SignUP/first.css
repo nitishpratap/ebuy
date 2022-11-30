@@ -19,14 +19,13 @@
     font-size: x-large;
      margin-left: 65px;
 }
-.picture{
+.color .picture{
     width: 33vw;
-    height: 70vh;
-    position: absolute;
+    height: 91vh;
 }
 
 non-color{
-    eft: 33vw;
+    /*left: 33vw;*/
     width: 67vw;
     height: 100vh;
     position: absolute;
@@ -49,6 +48,9 @@ signIn{
 .form-heading{
     margin-top: 10vw;
     margin-left: 14vw;
+
+}
+.fields{
 
 }
 .text-fields{
@@ -84,6 +86,95 @@ button{
     color: white;
     font-weight: bolder;
 
+}
+@media only screen and (max-width: 991px){
+    .title{
+        display: none;
+    }
+    .picture{
+        display:none;
+    }
+    .color{
+        background-color: white;
+
+    }
+    .non-color{
+        margin-left: -27vw;
+
+    }
+    .textAndButton{
+
+
+    }
+    .input{
+        width: 40vw;
+    }
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .parent{
+
+    }
+    .textAndButton{
+        right: 8vw;
+    }
+    .buttons{
+        width: 80vw;
+        margin-left: 7.8rem;
+    }
+
+}
+@media only screen and (min-width: 530px) and (max-width: 768px) {
+    .parent{
+        background-color: tomato;
+    }
+    .textAndButton{
+        right:10vw;
+
+    }
+    .loginSection{
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 530px){
+    .logo{
+
+    }
+    .textAndButton{
+        margin-left: 15vh ;
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+
+    .createAccountButton{
+        width: 29vw;
+    }
+    .form-heading{
+        margin-top: 43vw;
+        margin-left: 15vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-fields{
+        margin-left:0;
+    }
+
+    .input{
+        width:70vw;
+    }
+    .password{
+        width:70vw !important;
+
+    }
+    .createAccountButton{
+        margin-left: -14vw;
+    }
 }
 
 
