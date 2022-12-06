@@ -15,6 +15,9 @@ export function Home() {
                 <br/>
                 <a href={"/signup"} style={{textDecoration: "none"}}>signup</a>
                 <br/>
+                <br/>
+                <a href={"/error"} style={{textDecoration: "none"}}>Error</a>
+
             </div>
             <Footer></Footer>
         </>

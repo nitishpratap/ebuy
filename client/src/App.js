@@ -1,14 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-// import Layout from '../containers/Layout'
-// import Login from '../containers/Login'
-// import RecoveryPassword from '../containers/RecoveryPassword'
-// import NotFound from '../pages/NotFound'
-
 import {Home} from "./Components/Home/Home";
 import {SignIn} from "./Components/SignIn/SignIn";
 import {SignUp} from "./Components/SignUP/SignUp";
-
+import {Error} from "./Components/404/Error"
 
 const App = () => {
     return (
@@ -18,7 +13,7 @@ const App = () => {
                     <Route exact path="/" element={<Home/>}/>
                     <Route exact path="/login" element={<SignIn/>}/>
                     <Route exact path="/signup" element={<SignUp/>}/>
-                    {/*<Route path="*" element={<NotFound/>}/>*/}
+                    <Route path="*" element={<Error/>}/>
                 </Routes>
         </Router>
     );

@@ -2,7 +2,7 @@ import * as React from 'react';
 import './style.css'
 import picture from "./error.png"
 
-export default function Error (){
+export  function Error (){
     return(
         <>
 
