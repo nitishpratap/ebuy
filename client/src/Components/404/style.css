@@ -1,0 +1,82 @@
+.subDiv{
+    display: flex;
+    flex-direction: row;
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+
+}
+.text{
+
+}
+.smallaPara{
+    background-color: white;
+    color:#FF497C;
+    margin-top: 15vw;
+    font-weight:bold ;
+
+}
+.heading{
+    font-family: DM Sans,sans-serif;
+    font-weight: bold;
+    font-size:xxx-large;
+    margin-top: 0;
+
+}
+
+button{
+    line-height: 40px;
+    width: 129px;
+    border-radius: 0.7rem;
+    background-color:#FF497C !important;
+    border:#FF497C ;
+    margin-top: 5vw;
+}
+.imageDiv{
+    margin-top: 10vw;
+
+}
+.picture{
+    margin-left: 9vw;
+    max-height: 65vh;
+}
+.paragraph{
+    color:grey;
+}
+@media only screen and (max-width: 991px){
+    .subDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .textDiv{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .smallaPara{
+       text-align: center;
+
+    }
+    .heading{
+        text-align: center;
+    }
+
+    .imageDiv{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .picture{
+        display: flex !important;
+        margin-left: 0px;
+        align-items: center;
+    }
+
+
+}
+
