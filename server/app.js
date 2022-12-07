@@ -20,10 +20,14 @@ const createUser =  ()=>{
     })
 }
 const getUser = ()=>{
-    app.get("/user",async (req,res)=>{
+    console.log("hello nitish")
+    app.get("/login",async (req,res)=>{
         try{
-            const userData = await userDetail.find()
+            console.log("inside try")
+            const userData = await loginSchema.find({})
+            console.log("below try")
             res.send(userData)
+            console.log("userData is :", userData)
             res.status(200)
         }
         catch (e) {

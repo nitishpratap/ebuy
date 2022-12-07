@@ -4,6 +4,18 @@ import Button from 'react-bootstrap/Button';
 import style from './style.css'
 import logo from './logo.png'
 import icon from './login.png'
+import axios from "axios";
+
+const loginUser = ()=>{
+    console.log("inside login user")
+    let user = axios.get("/login").then((res)=>{
+        console.log(res)
+    })
+        .catch((e)=>{
+            console.log(e)
+        });
+
+}
 
 export function SignIn() {
     return (
@@ -37,7 +49,7 @@ export function SignIn() {
                     </div>
                     <div className={"loginSection"}>
                             <div className={"btnAndForget"}>
-                                <Button className={"signIn"}><h4 className={"noHover"}>Sign In</h4></Button>
+                                <Button className={"signIn"} onClick={loginUser}><h4 className={"noHover"}>Sign In</h4></Button>
                             </div>
                             <a href="" className="link">Forget password?</a>
                     </div>
