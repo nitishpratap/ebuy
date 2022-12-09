@@ -4,6 +4,8 @@ import {SignUp} from "../SignUP/SignUp";
 import {SignIn} from "../SignIn/SignIn";
 import {Route} from "react-router-dom";
 import {Footer} from "../Footer/Footer";
+import{Error} from "../404/Error"
+import{Coming} from "../comingSoon/Coming"
 
 export function Home() {
     return (
@@ -17,6 +19,10 @@ export function Home() {
                 <br/>
                 <br/>
                 <a href={"/error"} style={{textDecoration: "none"}}>Error</a>
+                <br/>
+                <br/>
+
+                <a href={"/coming"} style={{textDecoration: "none"}}>coming</a>
 
             </div>
             <Footer></Footer>
