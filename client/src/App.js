@@ -5,6 +5,7 @@ import {SignIn} from "./Components/SignIn/SignIn";
 import {SignUp} from "./Components/SignUP/SignUp";
 import {Error} from "./Components/404/Error"
 import {Coming} from "./Components/comingSoon/Coming";
+import {Wishlist} from "./Components/Wishlist/Wishlist";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                     <Route exact path="/signup" element={<SignUp/>}/>
                     <Route exact path="/Error" element={<Error/>}/>
                     <Route path ="/Coming" element={<Coming/>}/>
+                    <Route path="/Wishlist" element={<Wishlist/>}/>
                 </Routes>
         </Router>
     );

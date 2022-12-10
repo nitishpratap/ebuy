@@ -23,6 +23,12 @@ export function Home() {
                 <br/>
 
                 <a href={"/coming"} style={{textDecoration: "none"}}>coming</a>
+                <br/>
+                <br/>
+
+                <a href={"/wishlist"} style={{textDecoration: "none"}}>Wishlist</a>
+
+
 
             </div>
             <Footer></Footer>
