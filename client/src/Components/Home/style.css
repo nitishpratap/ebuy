@@ -1,0 +1,28 @@
+.start{
+    background-color: #F9F3F0;
+    width: 100vw;
+    height: 95vh;
+    border: 1px solid #F9F3F0;
+
+}
+.navbar{
+    background-color: #FFFFFF;
+    width: 90vw;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+}
+.home-logo{
+    margin-left: 3rem;
+    margin-top: 0.5rem;;
+}
+.navbar-links{
+    display: flex;
+    margin: 1rem;
+     margin-left: 3rem;
+}
+
+.navbar-link{
+    margin-left: 3rem;
+}
