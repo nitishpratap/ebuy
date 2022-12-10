@@ -7,16 +7,16 @@ import {MdOutlineCancel} from 'react-icons/md'
 
 const data = [
     {
-        icon: "1",
-        image: {picture1},
+        icon: <MdOutlineCancel/>,
+        image: `${picture1}`,
         product: "Wireless PS Handler",
         Unit_Price: "$124.00",
         Stock_Status: "In Stock",
         button: "Add to Cart"
     },
     {
-        icon: "1",
-        image: {picture2},
+        icon: <MdOutlineCancel/>,
+        image: `${picture2}`,
         product: "Wireless PS Handler",
         Unit_Price: "$124.00",
         Stock_Status: "In Stock",
@@ -43,7 +43,7 @@ export function Wishlist() {
                         return (
                             <tr key={key}>
                                 <td>{val.icon}</td>
-                                <td><img src={val.image.picture1}/></td>
+                                <td><img src={val.image}/></td>
                                 <td>{val.product}</td>
                                 <td>{val.Unit_Price}</td>
                                 <td>{val.Stock_Status}</td>
