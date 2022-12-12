@@ -7,7 +7,6 @@ import icon from './login.png'
 import axios from "axios";
 
 const loginUser = ()=>{
-    console.log("inside login user")
     let user = axios.get("/login").then((res)=>{
         console.log(res)
     })

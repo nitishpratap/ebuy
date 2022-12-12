@@ -6,22 +6,48 @@ import {Route} from "react-router-dom";
 import {Footer} from "../Footer/Footer";
 import {Error} from "../404/Error"
 import {Coming} from "../comingSoon/Coming"
-import logo from "./logo.png"
+import {CiSearch} from "react-icons/ci"
+import {CiHeart} from "react-icons/ci";
+import {CiShoppingCart} from "react-icons/ci";
+import {BsPerson} from "react-icons/bs"
 
-export function Home() {
+import logo from "./logo.png"
+import {icons} from "react-icons";
+
+export const Navbar = () => {
     return (
         <>
             <div className={"start"}>
                 <div className={"navbar"}>
                     <img className={"home-logo"} src={logo} style={{width: "150px", height: "50px"}}/>
                     <div className={"navbar-links"}>
-                        <a className={"navbar-link"}>Home</a>
-                        <a className={"navbar-link"}>shop</a>
-                        <a className={"navbar-link"}>about</a>
-                        <a className={"navbar-link"}>contact</a>
+                        <a className={"navbar-link"}><h5>Home</h5></a>
+                        <a className={"navbar-link"}><h5>Shop</h5></a>
+                        <a className={"navbar-link"}><h5>About</h5></a>
+                        <a className={"navbar-link"}><h5>Contact</h5></a>
                     </div>
+                    <NavbarIcons/>
                 </div>
             </div>
+        </>
+    )
+}
+
+export const NavbarIcons = ()=>{
+    return(
+        <div className={"nav-icons"}>
+            <CiSearch className={"nav-icon"}/>
+            <CiHeart className={"nav-icon"}/>
+            <CiShoppingCart className={"nav-icon"}/>
+            <BsPerson className={"nav-icon"}/>
+        </div>
+        )
+}
+
+export function Home() {
+    return (
+        <>
+            <Navbar/>
             <div style={{textAlign: "center"}}>
                 <a href={"/login"} style={{textDecoration: "none"}}>login</a>
                 <br/>
@@ -36,11 +62,7 @@ export function Home() {
                 <a href={"/coming"} style={{textDecoration: "none"}}>coming</a>
                 <br/>
                 <br/>
-
                 <a href={"/wishlist"} style={{textDecoration: "none"}}>Wishlist</a>
-
-
-
             </div>
             <Footer></Footer>
         </>

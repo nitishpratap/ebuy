@@ -3,26 +3,36 @@
     width: 100vw;
     height: 95vh;
     border: 1px solid #F9F3F0;
-
 }
+
 .navbar{
     background-color: #FFFFFF;
     width: 90vw;
     height: 4rem;
-    margin: 0 auto;
     margin-top: 3rem;
+    margin-left: 5vw;
     display: flex;
+    justify-content: space-around;
+    position: fixed;
 }
+
 .home-logo{
-    margin-left: 3rem;
     margin-top: 0.5rem;;
 }
+
 .navbar-links{
     display: flex;
-    margin: 1rem;
-     margin-left: 3rem;
 }
 
 .navbar-link{
     margin-left: 3rem;
 }
+
+.nav-icons{
+    margin-top: 1.2rem;
+}
+
+.nav-icon{
+    margin-left: 1rem;
+}
+
