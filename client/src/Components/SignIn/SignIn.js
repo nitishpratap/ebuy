@@ -8,6 +8,7 @@ import axios from "axios";
 
 const loginUser = ()=>{
     let user = axios.get("/login").then((res)=>{
+        console.log("login press")
         console.log(res)
     })
         .catch((e)=>{

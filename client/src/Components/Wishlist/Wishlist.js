@@ -1,11 +1,17 @@
 import React from 'react';
+import './Wishlist.css'
 import picture1 from './product-01.png'
 import picture2 from './product-02.png'
 import picture3 from './product-03.png'
 import {MdOutlineCancel} from 'react-icons/md'
+import image from "./Swipe.png"
+import {BsArrowLeft} from 'react-icons/bs'
 
-
-const data = [
+/**
+ *
+ * @type {[{button: string, image: string, product: string, Stock_Status: string, icon: JSX.Element, Unit_Price: string},{button: string, image: string, product: string, Stock_Status: string, icon: JSX.Element, Unit_Price: string}]}
+ */
+const wishList = [
     {
         icon: <MdOutlineCancel/>,
         image: `${picture1}`,
@@ -25,21 +31,42 @@ const data = [
 
 ]
 
+
+/**
+ *
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export function Wishlist() {
     return (
         <>
             <div className={"mainDiv"}>
-                <h2>My Wish List on eTrade <MdOutlineCancel/></h2>
+                <header>
+                    <div className="head-text">
+                        <div className="head-image">
+                            <img src={image}/>
+                        </div>
+                        <div className='text-on-image'>
+
+                            <div className={"text"}>
+                                <div><BsArrowLeft className={"leftArrow"}/></div>
+                                <div>STUDENT NOW GET 10% OFF: <u>GET OFFER </u></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <h2>My Wish List on eTrade </h2>
+            </div>
+            <div className={"nav"}>
+                <tr>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Stock Status</th>
+                </tr>
             </div>
             <div className={"table"}>
                 <table>
-                    <tr>
-                        <th>Product</th>
-                        <th>Unit Price</th>
-                        <th>Stock Status</th>
-                    </tr>
-                    {data.map((val, key) => {
-
+                    {wishList.map((val, key) => {
                         return (
                             <tr key={key}>
                                 <td>{val.icon}</td>
@@ -48,17 +75,11 @@ export function Wishlist() {
                                 <td>{val.Unit_Price}</td>
                                 <td>{val.Stock_Status}</td>
                                 <td>{val.button}</td>
-
-
-
                             </tr>
                         )
                     })}
                 </table>
-
             </div>
-
         </>
     );
-
 }
