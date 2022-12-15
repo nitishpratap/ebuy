@@ -1,7 +1,7 @@
 .start{
     background-color: #F9F3F0;
     width: 100vw;
-    height: 95vh;
+    height: 82vh;
     border: 1px solid #F9F3F0;
 }
 
@@ -34,5 +34,25 @@
 
 .nav-icon{
     margin-left: 1rem;
+}
+.flex{
+    display: flex;
+}
+.buttons-star{
+    align-items: baseline;
+}
+
+
+
+.background-text{
+    display: flex;
+    justify-content: space-around;
+}
+.home-bg-image{
+    justify-self: flex-end;
+    margin-top: auto;
+}
+.deals{
+    margin-top: 10rem;
 }
 
