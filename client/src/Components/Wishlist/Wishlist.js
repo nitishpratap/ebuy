@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Wishlist.css'
 import picture1 from './product-01.png'
 import picture2 from './product-02.png'
@@ -7,6 +7,9 @@ import picture3 from './product-03.png'
 import {MdOutlineCancel} from 'react-icons/md'
 import image from "./Swipe.png"
 import {BsArrowLeft} from 'react-icons/bs'
+import {BsArrowRight} from 'react-icons/bs'
+import {useState} from "react";
+
 
 /**
  *
@@ -20,7 +23,7 @@ const wishList = [
         Unit_Price: "$124.00",
         Stock_Status: "In Stock",
         button: "Add to Cart",
-
+        line: <hr className={"line"}/>,
     },
     {
         icon: <MdOutlineCancel/>,
@@ -29,6 +32,7 @@ const wishList = [
         Unit_Price: "$124.00",
         Stock_Status: "In Stock",
         button: "Add to Cart",
+        line: <hr className={"line"}/>,
 
     },
     {
@@ -38,6 +42,7 @@ const wishList = [
         Unit_Price: "$124.00",
         Stock_Status: "In Stock",
         button: "Add to Cart",
+        line: <hr className={"line"}/>,
     },
 
 ]
@@ -49,6 +54,22 @@ const wishList = [
  * @constructor
  */
 export function Wishlist() {
+    const [data, setData] = useState(wishList);
+
+
+    /**
+     * To delete an element from the array
+     * @param id
+     */
+    const deleteItem = (id) => {
+        const newData = data;
+        data.splice(id, 1)
+        setData([...data, newData]);
+        console.log("id ::::", id)
+        console.log("data ::::", wishList)
+    }
+
+
     return (
         <>
             <div className={"mainDiv"}>
@@ -60,8 +81,9 @@ export function Wishlist() {
                         <div className='text-on-image'>
 
                             <div className={"text"}>
-                                <div><BsArrowLeft className={"leftArrow"}/></div>
-                                <div>STUDENT NOW GET 10% OFF: <u>GET OFFER </u></div>
+                                <span><BsArrowLeft className={"leftArrow "}/></span>
+                                <span className={"image-text"}>STUDENT NOW GET 10% OFF: <u>GET OFFER </u></span>
+                                <span><BsArrowRight className={"rightArrow "}/></span>
                             </div>
                         </div>
                     </div>
@@ -82,22 +104,26 @@ export function Wishlist() {
             </div>
             <div className={"table"}>
                 <table>
-                    {wishList.map((val, key) => {
+                    {data && data.map((val, key) => {
                         return (
                             <>
                                 <tr className={"row"} key={key}>
                                     <td>
-                                        <div className={"icon"}>{val.icon}</div>
+                                        <div onClick={() => {
+                                            deleteItem(key)
+                                        }} className={"icon"}>{val.icon}</div>
                                     </td>
                                     <td><img className={"img"} src={val.image}/></td>
                                     <td>{val.product}</td>
                                     <td className={"unit"}>{val.Unit_Price}</td>
                                     <td className={"col"}>{val.Stock_Status}</td>
-                                    <td className={"button"}>
-                                        <button>{val.button}</button>
+                                    <td>
+                                        {val.button && <button className={"button"}>{val.button}</button>}
                                     </td>
                                 </tr>
-                                <hr className={"line"}/>
+                                <div>{val.line}</div>
+
+
                             </>
 
                         )

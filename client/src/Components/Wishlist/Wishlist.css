@@ -22,9 +22,27 @@
 
 .text{
     color: white;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+
 }
 
 .leftArrow{
+    display:flex;
+    margin-left: 30vw;
+    margin-right:4vw;
+
+
+
+
+}
+.image-text {
+}
+
+.rightArrow{
+    display:inline-block;
+    margin-left: 4vw;
 
 }
 h2{
@@ -102,24 +120,24 @@ width: 20.5%;
     padding-left: 94px;
     margin-top: 22px
 }
-button{
+
+.button{
     margin-top: 0vw;
     margin-left: 90px;
     background-color:cornflowerblue !important;
     border: gray;
     color: black;
 }
-.button{
-
-}
 .line{
     /*display: block;*/
     height: 2px;
     border: 0;
-    border-top: 1ebepx solid black;
+    border-top: 1px solid black;
     margin: 1em 0;
     padding: 0;
     min-width: 3000%;
 }
+
+
 
 
