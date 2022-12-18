@@ -28,7 +28,7 @@ export const Navbar = () => {
                     </div>
                     <NavbarIcons/>
                 </div>
-                <BackgroundText productName="Nitish Pratap Yadav"/>
+                <BackgroundText productName="Mahansi Devi sisangiya"/>
             </div>
         </>
     )
