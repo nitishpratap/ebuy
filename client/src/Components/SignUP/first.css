@@ -80,7 +80,7 @@ input.Email.input {
     width: 14vw;
     border-radius: 0.7rem;
 }
-button{
+.button{
     background-color: #3576F0;
     border-color: #3576F0;
     color: white;

@@ -56,3 +56,71 @@
     margin-top: 10rem;
 }
 
+.icon-text{
+    /*flex-direction: column;*/
+    height: 2rem;
+}
+.reviews-text{
+    margin-left: 2.4rem;
+    margin-bottom: 1rem;
+}
+.shop-now-button{
+   text-align: center;
+}
+.buttons-star{
+    text-align: center;
+}
+.category-text{
+    margin-top: 0rem;
+    padding-left: 1rem;
+}
+.category-text-tag{
+    color: red;
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+.arrow-btn{
+    height: 3rem;
+    width: 3.5rem;
+    margin-left: 0.5rem;
+    border-radius: 0.7rem;
+    /*margin-top: 1rem;*/
+    text-align: center;
+}
+
+.flex-center-align{
+    align-items: center;
+}
+.four-rem-margin-left{
+    margin-left: 4rem;
+}
+.flex-justify-content-space-between{
+    justify-content: space-between;
+}
+.flex-justify-content-space-around{
+    justify-content: space-around;
+}
+
+.four-rem-margin-right{
+    margin-right: 4rem;
+}
+.category-box{
+    width: 7rem;
+    height: 7rem;
+    border : 1px solid black;
+}
+.category-box-div{
+    width: calc(100vw - 8rem);
+}
+.dont-miss-div{
+    width: calc(100vw - 8rem);
+    height: 20rem;
+    background-color: #F6F7FB;
+    margin-top: 6rem;
+}
+.headphone-text{
+    padding-top: 4rem;
+}
+
+
+
