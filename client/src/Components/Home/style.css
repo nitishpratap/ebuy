@@ -114,13 +114,18 @@
 }
 .dont-miss-div{
     width: calc(100vw - 8rem);
-    height: 20rem;
+    height: 40rem;
     background-color: #F6F7FB;
     margin-top: 6rem;
 }
 .headphone-text{
     padding-top: 4rem;
 }
-
+.color-red{
+    color: red;
+}
+.border{
+    border: 1px solid tomqaq;
+}
 
 

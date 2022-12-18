@@ -14,6 +14,7 @@ import {starArray} from "../Utils/constant"
 import {FaTags} from "react-icons/fa"
 import {BsArrowLeft, BsArrowRight} from "react-icons/bs"
 import {categoryArray} from "../Utils/constant"
+import headphone from "./headphone.png"
 
 export const Navbar = () => {
     return (
@@ -98,7 +99,6 @@ export const LeftArrowButton = (props) => {
     return (
         <>
             <button className={"arrow-btn"}>
-
                 <BsArrowLeft/>
             </button>
         </>
@@ -141,16 +141,20 @@ export const DoNotMiss = ()=>{
         <>
             <div className={"dont-miss-div four-rem-margin-left"}>
 
-                <div className={"headphone-text flex four-rem-margin-left"}>
+                <div className={"headphone-text flex four-rem-margin-left color-red"}>
                     <CiHeadphones />
                     <p style={{marginLeft:"1rem", marginTop: 0}}>Don’t Miss!!</p>
 
                 </div>
                 <h1 className={"four-rem-margin-left"} style={{marginTop : 0}}>Enhance Your Music Experience</h1>
+                <img src={headphone }/>
+
             </div>
         </>
     )
 }
+
+
 
 export function Home() {
     return (
