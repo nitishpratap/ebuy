@@ -9,6 +9,7 @@ import image from "./Swipe.png"
 import {BsArrowLeft} from 'react-icons/bs'
 import {BsArrowRight} from 'react-icons/bs'
 import {useState} from "react";
+import {Footer} from "../Footer/Footer";
 
 
 /**
@@ -130,6 +131,8 @@ export function Wishlist() {
                     })}
                 </table>
             </div>
+
+
         </>
     );
 }
