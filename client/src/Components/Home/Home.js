@@ -4,17 +4,16 @@ import {SignUp} from "../SignUP/SignUp";
 import {SignIn} from "../SignIn/SignIn";
 import {Route} from "react-router-dom";
 import {Footer} from "../Footer/Footer";
-import {Error} from "../404/Error"
-import {Coming} from "../comingSoon/Coming"
-import {CiSearch, CiHeart, CiShoppingCart,CiHeadphones} from "react-icons/ci"
+import {CiSearch, CiHeart, CiShoppingCart, CiHeadphones} from "react-icons/ci"
 import {BsPerson} from "react-icons/bs"
 import logo from "./logo.png"
 import {AiFillFire} from "react-icons/ai"
 import {starArray} from "../Utils/constant"
 import {FaTags} from "react-icons/fa"
-import {BsArrowLeft, BsArrowRight} from "react-icons/bs"
+import {BsArrowLeft, BsArrowRight,BsFillBasket2Fill} from "react-icons/bs"
 import {categoryArray} from "../Utils/constant"
 import headphone from "./headphone.png"
+import Button from 'react-bootstrap/Button';
 
 export const Navbar = () => {
     return (
@@ -81,11 +80,11 @@ export const Category = () => {
                 <FaTags/>
                 <h5 className={"category-text"}>Categories</h5>
             </div>
-            <div className={"flex flex-center-align flex-justify-content-space-between category-btn four-rem-margin-right"}>
+            <div
+                className={"flex flex-center-align flex-justify-content-space-between category-btn four-rem-margin-right"}>
                 <h1 className={"four-rem-margin-left"}>
-                    Browse by Category
-                </h1>
-                <div >
+                    Browse by Category</h1>
+                <div>
                     <LeftArrowButton/>
                     <RightArrowButton/>
                 </div>
@@ -126,8 +125,8 @@ export const NavbarIcons = () => {
     )
 }
 
-export const CategoryBox = (props)=>{
-    return(
+export const CategoryBox = (props) => {
+    return (
         <>
             <div className={"category-box"}>
                 <img src={props.image}/>
@@ -136,24 +135,93 @@ export const CategoryBox = (props)=>{
     )
 }
 
-export const DoNotMiss = ()=>{
-    return(
+export const DoNotMiss = () => {
+    return (
         <>
             <div className={"dont-miss-div four-rem-margin-left"}>
 
                 <div className={"headphone-text flex four-rem-margin-left color-red"}>
-                    <CiHeadphones />
-                    <p style={{marginLeft:"1rem", marginTop: 0}}>Don’t Miss!!</p>
-
+                    <CiHeadphones/>
+                    <p style={{marginLeft: "1rem", marginTop: 0}}>Don’t Miss!!</p>
                 </div>
-                <h1 className={"four-rem-margin-left"} style={{marginTop : 0}}>Enhance Your Music Experience</h1>
-                <img src={headphone }/>
-
+                <div className={"flex"}>
+                    <div className={"dont-miss-div-text-circle "}>
+                        <h1 className={"four-rem-margin-left"} style={{marginTop: 0}}>Enhance Your Music Experience</h1>
+                        <div className={"flex four-rem-margin-left flex-justify-content-space-between"}>
+                            <CircularBox time="0" text="Day"/><CircularBox time="0" text="Hrs"/><CircularBox time="0"
+                                                                                                             text="Min"/><CircularBox
+                            time="0" text="Sec"/>
+                        </div>
+                        <div className={"check-it-now-button"}>
+                            <CreateButton title="Check it Now"/>
+                        </div>
+                    </div>
+                    <img src={headphone} className={"headphone-image"}/>
+                </div>
             </div>
         </>
     )
 }
 
+export const OurProduct = () => {
+    return (
+        <>
+            <div className={"flex product-text-tag"}>
+                <BsFillBasket2Fill/>
+                <h5 className={"category-text"}>Our Products</h5>
+            </div>
+            <div
+                className={"flex flex-center-align flex-justify-content-space-between category-btn four-rem-margin-right"}>
+                <h1 className={"four-rem-margin-left"}>
+                    Explore our Products
+                </h1>
+                <div>
+                    <LeftArrowButton/>
+                    <RightArrowButton/>
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+export const CircularBox = (props) => {
+    return (
+        <>
+            <div className={"circle flex"}>
+                <p className={"circular-box-text"} style={{marginTop: "100", fontSize: "20px"}}>{props.time}</p>
+                <p className={"circular-box-text"} style={{marginTop: "0"}}>{props.text}</p>
+            </div>
+        </>
+    )
+}
+
+export const CreateButton = (props) => {
+    return (
+        <>
+            <Button className={"button-component four-rem-margin-left"}><h4
+                className={"noHover color-white"}>{props.title}</h4></Button>
+
+        </>
+    )
+}
+
+export const RectangularCard = (props)=>{
+    return(
+        <>
+            <div className={"product-card four-rem-margin-left four-rem-margin-right"}>
+                <div className={"product-rectangle"}>
+                        <img src={props.image}/>
+                </div>
+                <div className={"flex flex-dir-column flex-justify-content-center .flex-align-items-center product-details"}>
+                    <p>{props.title}</p>
+                    <h3>{props.price}</h3>
+                </div>
+
+            </div>
+        </>
+    )
+}
 
 
 export function Home() {
@@ -162,15 +230,15 @@ export function Home() {
             <Navbar/>
             <Category/>
             <div className={"flex category-box-div flex-justify-content-space-between four-rem-margin-left "}>
-                {categoryArray.map(( image,index)=>{
-                   return(
-                       <CategoryBox image = {image}/>
-                   )
+                {categoryArray.map((image, index) => {
+                    return (
+                        <CategoryBox image={image}/>
+                    )
                 })}
-
-
             </div>
             <DoNotMiss/>
+            <OurProduct/>
+            <RectangularCard image = {""} title = "Headphone" price = "RS 150"/>
             <Footer></Footer>
         </>
     )
