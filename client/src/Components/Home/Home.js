@@ -52,8 +52,6 @@ const BackgroundText = (props) => {
                                         <Icon/>
                                     </li>
                                 ))}
-                                <li>
-                                </li>
                             </ul>
                         </div>
                         <p className={"reviews-text"}>100+ reviews</p>
@@ -213,11 +211,18 @@ export const RectangularCard = (props)=>{
                 <div className={"product-rectangle"}>
                         <img src={props.image}/>
                 </div>
-                <div className={"flex flex-dir-column flex-justify-content-center .flex-align-items-center product-details"}>
+                <div className={"flex flex-dir-column product-details"}>
                     <p>{props.title}</p>
+                    <ul style={{display: "flex", padding : 0, height : "10px"}}>
+                        {starArray.map((Icon, i) => (
+                            <li key={i} style={{listStyle: "none", color:"yellow "}}>
+                                <Icon/>
+                            </li>
+                        ))}
+                    </ul>
                     <h3>{props.price}</h3>
-                </div>
 
+                </div>
             </div>
         </>
     )
@@ -238,7 +243,7 @@ export function Home() {
             </div>
             <DoNotMiss/>
             <OurProduct/>
-            <RectangularCard image = {""} title = "Headphone" price = "RS 150"/>
+            <RectangularCard image = {""} title = "Headphone" price = "RS 150" ratingIcons = {[]}/>
             <Footer></Footer>
         </>
     )
