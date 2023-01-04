@@ -7,9 +7,10 @@ import {Footer} from "../Footer/Footer";
 import {CiSearch, CiHeart, CiShoppingCart, CiHeadphones} from "react-icons/ci"
 import {BsPerson} from "react-icons/bs"
 import logo from "./logo.png"
+import game from  "./game.png"
 import {AiFillFire} from "react-icons/ai"
 import {starArray} from "../Utils/constant"
-import {FaTags} from "react-icons/fa"
+import {FaTags,FaRupeeSign} from "react-icons/fa"
 import {BsArrowLeft, BsArrowRight,BsFillBasket2Fill} from "react-icons/bs"
 import {categoryArray} from "../Utils/constant"
 import headphone from "./headphone.png"
@@ -207,26 +208,48 @@ export const CreateButton = (props) => {
 export const RectangularCard = (props)=>{
     return(
         <>
-            <div className={"product-card four-rem-margin-left four-rem-margin-right"}>
+            <div className={"product-card four-rem-margin-left "}>
                 <div className={"product-rectangle"}>
-                        <img src={props.image}/>
+                        <div className={"discount"}>
+                            <p>20% off</p>
+                        </div>
+                        <img src={props.image} style={{width : "15rem",height:"15rem" }}/>
                 </div>
                 <div className={"flex flex-dir-column product-details"}>
                     <p>{props.title}</p>
                     <ul style={{display: "flex", padding : 0, height : "10px"}}>
                         {starArray.map((Icon, i) => (
-                            <li key={i} style={{listStyle: "none", color:"yellow "}}>
+                            <li key={i} style={{listStyle: "none", color:"#FFDC60"}}>
                                 <Icon/>
                             </li>
                         ))}
                     </ul>
-                    <h3>{props.price}</h3>
-
+                    <h3><FaRupeeSign/>{props.price}</h3>
                 </div>
             </div>
         </>
     )
 }
+
+export const AllRectangularCard = () => {
+    return (
+        <>
+            <div className={"all-rectangular-cards flex flex-justify-content-space-around"}>
+            <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+                <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+                <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+                <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+                <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+                <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+                <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+                <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
+
+            </div>
+        </>
+    )
+}
+
+
 
 
 export function Home() {
@@ -243,7 +266,7 @@ export function Home() {
             </div>
             <DoNotMiss/>
             <OurProduct/>
-            <RectangularCard image = {""} title = "Headphone" price = "RS 150" ratingIcons = {[]}/>
+            <AllRectangularCard/>
             <Footer></Footer>
         </>
     )

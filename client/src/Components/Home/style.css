@@ -71,7 +71,7 @@
     text-align: center;
 }
 .category-text{
-    margin-top: 0rem;
+    margin-top: 0;
     padding-left: 1rem;
 }
 .category-text-tag{
@@ -186,6 +186,20 @@
     align-items: center;
 }
 .product-details{
-    width: 15rem;
+    width: 5rem;
+}
+
+.all-rectangular-cards{
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+.discount{
+    width: 60px;
+    height: 20px;
+    background-color: #3576F0;
+    margin-left: 11.2em;
+    border-radius: 8%;
+    color: white;
+
 }
 
