@@ -170,9 +170,10 @@
 }
 
 .product-rectangle{
-    width: 15rem;
+    width: 16rem;
     height: 15rem;
     background-color: #F6F7FB;
+    position: relative;
 
 }
 .flex-dir-column{
@@ -197,9 +198,16 @@
     width: 60px;
     height: 20px;
     background-color: #3576F0;
-    margin-left: 11.2em;
+    margin-left: 13em;
     border-radius: 8%;
     color: white;
+    top : 100px;
+}
+
+.show-box{
+    width: 2rem;
+    height: 2rem;
+    background-color: tomato;
 
 }
 

@@ -4,6 +4,7 @@ import {SignUp} from "../SignUP/SignUp";
 import {SignIn} from "../SignIn/SignIn";
 import {Route} from "react-router-dom";
 import {Footer} from "../Footer/Footer";
+import {AiOutlineEye} from "react-icons/ai"
 import {CiSearch, CiHeart, CiShoppingCart, CiHeadphones} from "react-icons/ci"
 import {BsPerson} from "react-icons/bs"
 import logo from "./logo.png"
@@ -147,8 +148,7 @@ export const DoNotMiss = () => {
                     <div className={"dont-miss-div-text-circle "}>
                         <h1 className={"four-rem-margin-left"} style={{marginTop: 0}}>Enhance Your Music Experience</h1>
                         <div className={"flex four-rem-margin-left flex-justify-content-space-between"}>
-                            <CircularBox time="0" text="Day"/><CircularBox time="0" text="Hrs"/><CircularBox time="0"
-                                                                                                             text="Min"/><CircularBox
+                            <CircularBox time="0" text="Day"/><CircularBox time="0" text="Hrs"/><CircularBox time="0"text="Min"/><CircularBox
                             time="0" text="Sec"/>
                         </div>
                         <div className={"check-it-now-button"}>
@@ -200,7 +200,6 @@ export const CreateButton = (props) => {
         <>
             <Button className={"button-component four-rem-margin-left"}><h4
                 className={"noHover color-white"}>{props.title}</h4></Button>
-
         </>
     )
 }
@@ -213,7 +212,20 @@ export const RectangularCard = (props)=>{
                         <div className={"discount"}>
                             <p>20% off</p>
                         </div>
-                        <img src={props.image} style={{width : "15rem",height:"15rem" }}/>
+                    <div className={"product-image"}>
+                        <img src={props.image} style={{width : "16rem",height:"15rem" }}/>
+                        <div className={"select-product"}>
+                            <div className={"show-box"}>
+
+                            </div>
+                            <div className={"add-to-cart"}>
+
+                            </div>
+                            <div className={"like-box"}>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className={"flex flex-dir-column product-details"}>
                     <p>{props.title}</p>
@@ -243,7 +255,6 @@ export const AllRectangularCard = () => {
                 <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
                 <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
                 <RectangularCard image = {game} title = "Headphone" price = "150" ratingIcons = {[]}/>
-
             </div>
         </>
     )
@@ -267,7 +278,7 @@ export function Home() {
             <DoNotMiss/>
             <OurProduct/>
             <AllRectangularCard/>
-            <Footer></Footer>
+            <Footer/>
         </>
     )
 }
